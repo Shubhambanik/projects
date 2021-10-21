@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Range slider for changing the brightness of the page -->
+    <div class="range-slide">
+        <div class="box">
+            <p>Brightness</p>
+            <div class="range">
+                <i class="fa fa-sun-o" style="font-size:20px" aria-hidden="true"></i>
+                <input type="range" id="bright" min="0" max="200" value="100">
+                <span class="value">100</span>
+            </div>
+        </div>
+        
+        <!-- This helps in changing the mode from light to dark mode -->
+        <div class="toggle-container">
+            <h3>Dark mode</h3>
+            <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+        </div>
+                    
+        <div class="reading">
+            <!-- This section deals with the different types of modes -->
+            <!-- Reading mode -->
+            <button type="button" id="night"><i class="fa fa-file-text-o" style="font-size:20px"></i></button>
+            <!-- Night mode -->
+            <button type="button" id="dark"><i class="fa fa-moon-o" style="font-size:20px"></i></button>
+            <!-- Full screen mode -->
+            <button type="button" id="full"><i class="fa fa-expand" style="font-size:20px"></i></button>
+        </div>
+
+        <!-- This section deals with the name of the modes -->
+        <div class="name1">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 id="ready">Read</h4>
+                    <h4 id="nighty">Night</h4>
+                    <h4 id="fully">Full</h4>
+                </div>
+            </div>
+
+            <!-- This button reverses all the changes made to the filters -->
+            <button type="button" id="undo">Undo</button>
+        </div>
+
+        <!-- There are specific conditions where the filters can work properly -->
+        <div class="disclaimer">
+            <ul>
+                <h3 id="note">Note</h3>
+                <li>Undo removes all changes</li>
+                <li>Brightness works better in full screen</li>
+                <li>Each webpage has its own custom filter</li>
+                <li>Your filters for different webpages are saved</li>
+            </ul>
+        </div>
+
+        <script src="pop-up.js"></script>
+</body>
+</html>

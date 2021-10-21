@@ -1,0 +1,30 @@
+{
+    "name": "Photon",
+    "version": "0.1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+      ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "persistent": true,
+    "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+    
+    "permissions": ["tabs", "activeTab", "scripting", "storage", "alarms", "idle"],
+    
+    "browser_action": {
+        "default_popup": "bright/index.html",
+        "default_icon": "bright/bulb2.png"
+    },
+    "icons":{
+      "128":"bright/bulb2.png"
+    }
+    
+}

@@ -1,0 +1,208 @@
+/* The styles for the different elements of the popup have been giveh here */
+
+body {
+    width: 200px;
+    height: 175px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: inner-flex;
+    margin: auto 10px;
+    font-size: 15px;
+	font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.fa{
+	font-size: large;
+}
+
+.reading{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#modes{
+	margin-left: 10px;
+}
+
+
+#bright-rect-range{
+    fill: #4154f1;
+    stroke: none;    
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 35px;
+	height: 20px;
+	background: black;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+	margin-left:8px;
+
+	margin-right: 22px;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 14px;
+	height: 14px;
+	background: white;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: white;
+	border: 2px solid black;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+	background: black;
+	
+
+}
+
+label:active:after {
+	width: 14px;
+	height: 14px;
+
+}
+
+.toggle-container{
+	margin-top: 24px;
+}
+
+#full{
+	margin-left:24px;
+	cursor: pointer;
+	padding: 7px;
+	border-radius: 25px;
+	border: white;
+	background-color: rgba(212, 250, 253, 0.938);
+	color: black;
+}
+
+#full:hover{
+	opacity: 0.7;
+}
+
+
+#night{
+	margin-left:4px;
+	border: #c4ef81;
+	background-color:#c4ef81;
+	color: steelblue;
+	cursor: pointer;
+	padding: 7px;
+	border-radius: 25px;
+}
+
+#night:hover{
+	opacity: 0.7;
+}
+
+h3{
+	display: unset;
+	margin-left: 19px;
+	font-family:'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+
+#dark{
+	margin-left:25px;
+	background-color:#bababa;
+	border: #939393;
+	cursor: pointer;
+	padding: 7px;
+	border-radius: 25px;
+}
+
+#dark:hover{
+	opacity: 0.7;
+}
+
+
+#undo{
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  border-radius:25.1px;
+  margin-left: 70px;
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+
+#undo:hover{
+	background-color:white ;
+	color: black;
+	font-weight: 600;
+	transition: 0.1sec;
+	border: 1px solid black;
+}
+
+
+h4{
+	display: inline;
+}
+
+
+#fully{
+	margin-left: 30px;
+}
+
+#ready{
+	margin-left: 15px;
+}
+
+#nighty{
+	margin-left: 25px;
+}
+
+.col-md-6{
+	margin-top: 6px;
+}
+
+.row{
+	font-family:'Poppins', sans-serif;
+	margin-left: 9px;
+}
+
+
+.disclaimer{
+	margin-left: -15px;
+	font-family: 'Poppins', sans-serif;
+	padding-bottom:20px;
+  }
+
+
+#note{
+	margin-left: -10px;
+  }
